@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fruitkha Website" />
+    <meta
+      name="keywords"
+      content="Fruits, frish, seasonal fruits, food, Fruitkha"
+    />
+    <meta name="author" content="Fruitkha" />
+    <title>Task</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="hover.css" />
+  </head>
+
+  <body>
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg py-3 position-fixed top-0 end-0 start-0 z-2"
+    >
+      <div class="container-fluid container">
+        <a class="navbar-brand" href="#"><img src="../assets/logo.png" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          onclick="togglerHandle()"
+        >
+          <span><i class="bi bi-list"></i></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mx-auto my-sm-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#">Shop</a>
+            </li>
+          </ul>
+          <div class="d-flex justify-content-center mt-lg-0 mt-3 gap-4">
+            <a role="button" class="nav-link">
+              <i class="bi bi-cart-fill"></i>
+            </a>
+            <a role="button" class="nav-link">
+              <i class="bi bi-search"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="hero-section">
+      <div class="overlay">
+        <div
+          class="container min-vh-100 d-flex flex-column justify-content-center align-items-center"
+        >
+          <h4 class="text-fruitkha-primary fs-6 fw-bold mb-3">
+            Fresh & Organic
+          </h4>
+          <h1 class="text-white fs-1 fw-bolder mb-4">
+            Delicious Seasonal Fruits
+          </h1>
+          <div>
+            <button
+              class="btn bg-Fruitkha-primary text-white rounded-5 me-2 px-3"
+            >
+              Fruit Collection
+            </button>
+            <button
+              class="btn border border-2 border-fruitkha-primary text-white rounded-5 px-3 hvr-sweep-to-right overflow-hidden"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Service Section -->
+    <section class="bg-body-tertiary service">
+      <div class="container mx-auto row py-5">
+        <div
+          class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-center gap-3 mb-4 mb-lg-0"
+        >
+          <div
+            class="rounded-circle border border-2 d-flex justify-content-center align-items-center fs-4"
+          >
+            <i class="bi bi-truck"></i>
+          </div>
+          <div>
+            <h4 class="mb-1 fs-5 fw-bolder">Free Shiping</h4>
+            <p class="text-secondary mb-0">when order is over $75</p>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-center gap-3 mb-4 mb-lg-0"
+        >
+          <div
+            class="rounded-circle border border-2 d-flex justify-content-center align-items-center fs-4"
+          >
+            <i class="bi bi-headset"></i>
+          </div>
+          <div>
+            <h4 class="mb-1 fs-5 fw-bolder">24/7 Support</h4>
+            <p class="text-secondary mb-0">Get Support All Day</p>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-center gap-3"
+        >
+          <div
+            class="rounded-circle border border-2 d-flex justify-content-center align-items-center fs-4"
+          >
+            <i class="bi bi-cash-coin"></i>
+          </div>
+          <div>
+            <h4 class="mb-1 fs-5 fw-bolder">Refund</h4>
+            <p class="text-secondary mb-0">Get Refund Within 3days!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="container py-5">
+      <div class="text-center">
+        <h2>
+          <span class="text-fruitkha-primary fw-bolder">Our</span> Products
+        </h2>
+        <div class="mx-auto mb-4 mini-splitter"></div>
+        <p class="text-secondary w-50 mx-auto">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+          dignissimos. Lorem ipsum dolor.
+        </p>
+      </div>
+      <div class="d-flex gap-5 flex-wrap justify-content-center mt-5">
+        <div class="p-4 shadow rounded-2 card hvr-grow border-0">
+          <img src="./assets/products/product-img-1.jpg" class="w-100" />
+          <div class="text-center">
+            <h4>Strawberry</h4>
+            <p class="mb-1 text-secondary">Per Kg</p>
+            <h4>70$</h4>
+            <button
+              class="btn bg-Fruitkha-primary text-white rounded-5 px-3 mb-4"
+            >
+              <i class="bi bi-cart-fill me-2"></i> Add To Cart
+            </button>
+          </div>
+        </div>
+        <div class="p-4 shadow rounded-2 card hvr-grow border-0">
+          <img src="./assets/products/product-img-2.jpg" class="w-100" />
+          <div class="text-center">
+            <h4>Strawberry</h4>
+            <p class="mb-1 text-secondary">Per Kg</p>
+            <h4>70$</h4>
+            <button
+              class="btn bg-Fruitkha-primary text-white rounded-5 px-3 mb-4"
+            >
+              <i class="bi bi-cart-fill me-2"></i> Add To Cart
+            </button>
+          </div>
+        </div>
+        <div class="p-4 shadow rounded-2 card hvr-grow border-0">
+          <img src="./assets/products/product-img-3.jpg" class="w-100" />
+          <div class="text-center">
+            <h4>Strawberry</h4>
+            <p class="mb-1 text-secondary">Per Kg</p>
+            <h4>70$</h4>
+            <button
+              class="btn bg-Fruitkha-primary text-white rounded-5 px-3 mb-4"
+            >
+              <i class="bi bi-cart-fill me-2"></i> Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Offer Section -->
+    <section class="section-gray-body">
+      <div
+        class="container d-flex align-items-center gap-3 py-5 flex-column flex-xl-row"
+      >
+        <div class="position-relative w-100">
+          <img src="/assets/a.jpg" class="mw-100 max-w" />
+          <div
+            class="offer-position border border-5 border-fruitkha-primary-dim bg-Fruitkha-primary text-center p-2 rounded-circle position-absolute"
+          >
+            <strong class="mb-0 fs-5">30%</strong>
+            <p>Off Per Kg</p>
+          </div>
+        </div>
+        <div class="w-100">
+          <h3><span class="text-fruitkha-primary">Deal</span> Of The Month</h3>
+          <p>Haikan Strawberry</p>
+          <p class="text-secondary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+            voluptatum suscipit hic numquam nesciunt sapiente ipsam, enim minima
+            sint maiores officia ullam, delectus repellendus tempora a
+            provident. Mollitia, optio quisquam?
+          </p>
+          <div class="d-flex gap-2 mb-4">
+            <div
+              class="cell text-center p-2 border border-2 border-fruitkha-primary"
+            >
+              <strong class="fs-4 text-fruitkha-primary">00</strong>
+              <p class="mb-1">Days</p>
+            </div>
+            <div
+              class="cell text-center p-2 border border-2 border-fruitkha-primary"
+            >
+              <strong class="fs-4 text-fruitkha-primary">00</strong>
+              <p class="mb-1">Hours</p>
+            </div>
+            <div
+              class="cell text-center p-2 border border-2 border-fruitkha-primary"
+            >
+              <strong class="fs-4 text-fruitkha-primary">00</strong>
+              <p class="mb-1">Minutes</p>
+            </div>
+            <div
+              class="cell text-center p-2 border border-2 border-fruitkha-primary"
+            >
+              <strong class="fs-4 text-fruitkha-primary">00</strong>
+              <p class="mb-1">Seconds</p>
+            </div>
+          </div>
+          <button
+            class="btn bg-Fruitkha-primary text-white rounded-5 px-3 mb-4"
+          >
+            <i class="bi bi-cart-fill me-2"></i> Add To Cart
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Qoute -->
+    <blockquote class="container py-5 text-center">
+      <div class="rounded-circle overflow-hidden pp-img mx-auto mb-3">
+        <img src="/assets/pp.jfif" class="w-100" />
+      </div>
+      <h5 class="mb-5">David Magdy</h5>
+      <p class="text-secondary w-75 mx-auto mb-5">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos asperiores
+        expedita debitis minima, mollitia iure at. Illum quos voluptate alias
+        voluptatem laborum aperiam adipisci vitae nam. A excepturi culpa iusto.
+      </p>
+      <div class="rotate-180 text-secondary fs-1">
+        <i class="bi bi-quote"></i>
+      </div>
+    </blockquote>
+
+    <!-- Feature Product -->
+    <section
+      class="container d-flex flex-column flex-lg-row gap-4 align-items-center py-5"
+    >
+      <div
+        class="position-relative w-100 rounded-end-top rounded-start-bottom overflow-hidden"
+      >
+        <div
+          class="overlay position-absolute top-0 bottom-0 end-0 start-0 d-flex justify-content-center align-items-center"
+        >
+          <button
+            class="btn play-btn text-white bg-Fruitkha-primary text-center rounded-circle fs-5"
+          >
+            <i class="bi bi-play-fill"></i>
+          </button>
+        </div>
+        <img src="/assets/feature-bg.jpg" class="w-100" />
+      </div>
+      <div class="w-100">
+        <p class="text-secondary">Sence 1994</p>
+        <h3 class="fw-bolder fs-1">
+          <span class="text-fruitkha-primary">We Are</span> Fruitkha
+        </h3>
+        <p class="text-secondary">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+          voluptatum suscipit hic numquam nesciunt sapiente ipsam, enim minima
+          sint maiores officia ullam, delectus repellendus tempora a provident.
+          Mollitia, optio quisquam? Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Quos voluptatum suscipit hic numquam nesciunt
+          sapiente ipsam, enim minima sint maiores officia ullam, delectus
+          repellendus tempora a provident. Mollitia, optio quisquam?
+        </p>
+        <button class="btn bg-Fruitkha-primary text-white rounded-5 px-3 mb-4">
+          Know More
+        </button>
+      </div>
+    </section>
+
+    <!-- Discount 50% -->
+    <section class="position-relative mw-100 overflow-hidden">
+      <div
+        class="position-absolute w-100 top-0 bottom-0 d-flex align-items-center"
+      >
+        <div class="container pt-4">
+          <h2 class="fs-1 fw-bolder">December Sale Is On!</h2>
+          <h2 class="fs-1 fw-bolder">
+            With Big <span class="text-fruitkha-primary">Descount...</span>
+          </h2>
+          <div class="d-flex align-items-end mb-3">
+            <div>
+              <p style="line-height: 10px" class="mb-0">Sale!</p>
+              <p class="mb-0">Upto</p>
+            </div>
+            <div
+              style="line-height: 42px"
+              class="fs-1 fw-bolder text-fruitkha-primary"
+            >
+              50%
+            </div>
+            <p class="mb-0">off</p>
+          </div>
+          <button
+            class="btn bg-Fruitkha-primary text-white rounded-5 px-3 mb-4"
+          >
+            Shop Now
+          </button>
+        </div>
+      </div>
+      <img src="/assets/1.jpg" class="discount-banner w-100" />
+    </section>
+
+    <section class="container py-5">
+      <div class="text-center">
+        <h2><span class="text-fruitkha-primary fw-bolder">Our</span> News</h2>
+        <div class="mx-auto mb-4 mini-splitter"></div>
+        <p class="text-secondary w-50 mx-auto">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+          dignissimos. Lorem ipsum dolor.
+        </p>
+      </div>
+      <div class="d-flex gap-5 flex-wrap justify-content-center mt-5 py-5">
+        <div class="shadow rounded-2 card hvr-grow border-0 overflow-hidden">
+          <img src="./assets/latest-news/news-bg-1.jpg" class="w-100" />
+          <div class="p-3">
+            <h5 class="fw-bolder mb-4">
+              Lorem ipsum dolor sit amet consectetur.
+            </h5>
+            <p class="mb-1 text-secondary fs-6 mb-4">
+              <i class="bi bi-person-fill"></i> Admin
+              <i class="bi bi-person-fill ms-2"></i> 24 December, 1994
+            </p>
+            <p class="mb-4 text-secondary">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+              nihil quo illum facilis tempora quod.
+            </p>
+            <a role="button" class="btn p-0">
+              Read More <i class="bi bi-caret-right-fill"></i>
+            </a>
+          </div>
+        </div>
+        <div class="shadow rounded-2 card hvr-grow border-0 overflow-hidden">
+          <img src="./assets/latest-news/news-bg-2.jpg" class="w-100" />
+          <div class="p-3">
+            <h5 class="fw-bolder mb-4">
+              Lorem ipsum dolor sit amet consectetur.
+            </h5>
+            <p class="mb-1 text-secondary fs-6 mb-4">
+              <i class="bi bi-person-fill"></i> Admin
+              <i class="bi bi-person-fill ms-2"></i> 24 December, 1994
+            </p>
+            <p class="mb-4 text-secondary">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+              nihil quo illum facilis tempora quod.
+            </p>
+            <a role="button" class="btn p-0">
+              Read More <i class="bi bi-caret-right-fill"></i>
+            </a>
+          </div>
+        </div>
+        <div class="shadow rounded-2 card hvr-grow border-0 overflow-hidden">
+          <img src="./assets/latest-news/news-bg-3.jpg" class="w-100" />
+          <div class="p-3">
+            <h5 class="fw-bolder mb-4">
+              Lorem ipsum dolor sit amet consectetur.
+            </h5>
+            <p class="mb-1 text-secondary fs-6 mb-4">
+              <i class="bi bi-person-fill"></i> Admin
+              <i class="bi bi-person-fill ms-2"></i> 24 December, 1994
+            </p>
+            <p class="mb-4 text-secondary">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+              nihil quo illum facilis tempora quod.
+            </p>
+            <a role="button" class="btn p-0">
+              Read More <i class="bi bi-caret-right-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center py-5">
+        <button class="btn bg-Fruitkha-primary text-white rounded-5 px-3 mb-4">
+          More news
+        </button>
+      </div>
+    </section>
+
+    <section class="section-gray-body">
+      <div class="container mx-auto py-4 row">
+        <div class="col-md-3 col-sm-6">
+          <img src="/assets/company-logos/1.png" class="logo d-block mx-auto" />
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img src="/assets/company-logos/2.png" class="logo d-block mx-auto" />
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img src="/assets/company-logos/3.png" class="logo d-block mx-auto" />
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <img src="/assets/company-logos/4.png" class="logo d-block mx-auto" />
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-Fruitkha-secondry text-center text-lg-start text-white pb-5"
+    >
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="mb-3 fw-bold">Service</h5>
+            <div class="mb-4 mx-auto mx-lg-0 mini-splitter"></div>
+            <p class="fw-light text-secondary">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+              tenetur minima ipsam consequuntur voluptas repudiandae aperiam
+              recusandae, ullam modi at quae cum nemo eos possimus. Explicabo.
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="mb-3 fw-bold">About</h5>
+            <div class="mb-4 mx-auto mx-lg-0 mini-splitter"></div>
+            <ul class="list-unstyled fw-light text-secondary">
+              <li class="my-1">38/4 Lorem, ipsum.</li>
+              <li class="my-1">Support@fruitkha.com</li>
+              <li class="my-1">+00 11 22 33 44</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="mb-3 fw-bold">Help</h5>
+            <div class="mb-4 mx-auto mx-lg-0 mini-splitter"></div>
+            <ul class="list-unstyled mb-2 fw-light text-secondary">
+              <li class="my-1">
+                <a href="#" class="nav-link hvr-icon-forward">
+                  <i
+                    class="text-fruitkha-primary fw-bolder hvr-icon d-inline-block"
+                    >></i
+                  >
+                  Home
+                </a>
+              </li>
+              <li class="my-1">
+                <a href="#" class="nav-link hvr-icon-forward">
+                  <i
+                    class="text-fruitkha-primary fw-bolder hvr-icon d-inline-block"
+                    >></i
+                  >
+                  About
+                </a>
+              </li>
+              <li class="my-1">
+                <a href="#" class="nav-link hvr-icon-forward">
+                  <i
+                    class="text-fruitkha-primary fw-bolder hvr-icon d-inline-block"
+                    >></i
+                  >
+                  Shop
+                </a>
+              </li>
+              <li class="my-1">
+                <a href="#" class="nav-link hvr-icon-forward">
+                  <i
+                    class="text-fruitkha-primary fw-bolder hvr-icon d-inline-block"
+                    >></i
+                  >
+                  News
+                </a>
+              </li>
+              <li class="my-1">
+                <a href="#" class="nav-link hvr-icon-forward">
+                  <i
+                    class="text-fruitkha-primary fw-bolder hvr-icon d-inline-block"
+                    >></i
+                  >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h4 class="mb-3 fw-bold">Supscripe</h4>
+            <div class="mb-4 mx-auto mx-lg-0 mini-splitter"></div>
+            <div class="mb-3 d-flex gap-1">
+              <input
+                type="text"
+                class="w-100 p-2 rounded-start-2 bg-Fruitkha-secondry-light border-0 text-white"
+              />
+              <button
+                class="btn py-2 px-3 text-fruitkha-primary rounded-start-0 rounded-end-2 bg-Fruitkha-secondry-light"
+              >
+                <i class="bi bi-send-fill"></i>
+              </button>
+            </div>
+            <p class="text-secondary fs-6 fw-light">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
+              ipsum cumque officia dolore.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
+      integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript" src="/main.js"></script>
+  </body>
+</html>

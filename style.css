@@ -1,0 +1,158 @@
+:root {
+  --primary-color: #f28123;
+  --primary-dim-color: #b6611c;
+  --secondry-color: #051922;
+  --secondry-light: #012738;
+}
+
+nav {
+  color: white;
+  transition: all 100ms;
+}
+
+.max-w {
+  max-width: 500px;
+}
+
+.navbar-brand img {
+  width: 8rem;
+}
+
+.navbar-toggler {
+  border-color: inherit;
+}
+
+a.nav-link,
+.navbar-toggler {
+  color: inherit;
+}
+
+.hero-section h4.text-fruitkha-primary {
+  letter-spacing: 0.5rem;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:focus {
+  color: var(--primary-color);
+}
+
+.hero-section {
+  background-image: url("/assets/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.rounded-end-top {
+  border-top-right-radius: 0.5rem;
+}
+
+.rounded-start-bottom {
+  border-bottom-left-radius: 0.5rem;
+}
+
+.overlay {
+  background-color: #0519229e;
+}
+
+.bg-Fruitkha-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-Fruitkha-secondry {
+  background-color: var(--secondry-color) !important;
+}
+
+.bg-Fruitkha-secondry-light {
+  background-color: var(--secondry-light) !important;
+}
+
+.text-fruitkha-primary {
+  color: var(--primary-color) !important;
+}
+
+.border-fruitkha-primary {
+  border-color: var(--primary-color) !important;
+}
+
+.border-fruitkha-primary-dim {
+  border-color: var(--primary-dim-color) !important;
+}
+
+section.service .rounded-circle {
+  width: 3.5rem;
+  height: 3.5rem;
+  color: var(--primary-color);
+  border-color: var(--primary-color) !important;
+  border-style: dotted !important;
+}
+
+.mini-splitter {
+  width: 2rem;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.card {
+  width: 300px;
+}
+
+.offer-position {
+  top: 0px;
+  left: 120px;
+}
+
+.cell {
+  width: 80px;
+}
+
+.section-gray-body {
+  background-color: #f5f5f5;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.pp-img {
+  width: 80px;
+  height: 80px;
+}
+
+.play-btn {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 0px 10px white;
+}
+
+.line-height {
+  line-height: 10px;
+}
+
+.discount-banner {
+  min-width: 900px;
+  position: relative;
+  z-index: -1;
+  right: 0;
+}
+
+.logo {
+  max-width: 160px;
+}
+
+@media (max-width: 576px) {
+  .discount-banner {
+    left: -50%;
+  }
+}
+
+button.bg-Fruitkha-primary:hover {
+  background-color: var(--primary-dim-color) !important;
+}
+
+button.hvr-sweep-to-right:before {
+  background-color: var(--primary-color);
+}
+
+footer .nav-link:hover {
+  color: white;
+}
